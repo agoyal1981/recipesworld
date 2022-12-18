@@ -1,6 +1,6 @@
 Steps to Work with the Website
 
-1. Website link: https://gentle-medovik-6b27a1.netlify.app
+1. Website link: https://chic-pithivier-6696b6.netlify.app
 
 2. The main page displays Search function - you can type e.g. Cookie or Cake  and it will display the recipes
 
@@ -10,7 +10,7 @@ Steps to Work with the Website
 
 5. Main page is displaying Veggie and Popular picks
 
-6. the Recipe function should display the Instructions and Ingredients but currently not working.
+6. the Recipe function displays the buttons for Instructions and Ingredients but currently not working.
 
 7. If you click on the recipe pic to view the point 6 than website is currently crashing and need to open the page from fresh.
 

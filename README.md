@@ -1,3 +1,23 @@
+Steps to Work with the Website
+
+1. Website link: https://gentle-medovik-6b27a1.netlify.app
+
+2. The main page displays Search function - you can type e.g. Cookie or Cake  and it will display the recipes
+
+3. The navbar is displaying 4 cuisines and by clicking in each will display the cuisines for the same.
+
+4. clicking on the Logo will back to the home page
+
+5. Main page is displaying Veggie and Popular picks
+
+6. the Recipe function should display the Instructions and Ingredients but currently not working.
+
+7. If you click on the recipe pic to view the point 6 than website is currently crashing and need to open the page from fresh.
+
+8. Started working on the Login and register page to develop the Rating of the recipes, was not able to complete it due to unforseen circumstances.
+
+9. will further work on this to improve.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

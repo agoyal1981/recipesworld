@@ -4,25 +4,26 @@ import { useParams } from "react-router";
 
 import React from 'react'
 
-
 function Recipe() {
 
   let params = useParams();
   const [details, setDetails] = useState({});
   const [activeTab, setActiveTab] = useState('instructions');
 
-  const fetchDetails = async ()=> {
+  const fetchDetails = async (name)=> {
 
-    const URL = "https://api.spoonacular.com/recipes/$params.name/information?apiKey=20b37c3fd1f546659cc9b538f5ee53c7";
+    console.log("Parameter Name " + name)
+    const URL = "https://api.spoonacular.com/recipes/" + name + "/information?apiKey=6e7fd477562341d9a126ac69cad9e8c3";
+    console.log("URL " + URL)
     const data = await fetch(URL);
     const detailData = await data.json();
     setDetails(detailData);
     console.log(detailData);
-  };
+  }
 
   useEffect(()=> {
-    fetchDetails();
-  },[params.name]);
+    fetchDetails(params.name);
+    },[params.name]);
 
   return (
     <DetailWrapper>
@@ -31,11 +32,10 @@ function Recipe() {
         <img src={details.image} alt=""/>
       </div>
       <Info>
-        <Button className={activeTab === 'instructions' ? 'active' : ''} 
+      <Button className={activeTab === 'instructions' ? 'active' : ''} 
         onClick={()=> setActiveTab('instructions')}>
           Instructions</Button>
-
-        <Button className={activeTab === 'ingredients' ? 'active' : ''} 
+          <Button className={activeTab === 'ingredients' ? 'active' : ''} 
         onClick={()=> setActiveTab('ingredients')}>
           Ingredients</Button>
 
@@ -45,7 +45,6 @@ function Recipe() {
             <h3 dangerouslySetInnerHTML={{__html: details.instructions}}></h3>
           </div>
           )}
-
           {activeTab === "ingredients" && (
             <ul>
               {details.extendedIngredients.map((ingredient) => (
@@ -55,8 +54,7 @@ function Recipe() {
               ))}
             </ul>
           )};
-
-        </Info>
+      </Info>
     </DetailWrapper>
   );
 }
@@ -95,4 +93,4 @@ const Info = styled.div`
   margin-left: 10rem;
 `;
 
-export default Recipe
+export default Recipe;

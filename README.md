@@ -10,13 +10,11 @@ Steps to Work with the Website
 
 5. Main page is displaying Veggie and Popular picks
 
-6. the Recipe function displays the buttons for Instructions and Ingredients but currently not working.
+6. the Recipe function displays the Pic and buttons for Instructions and Ingredients. On pressing the button they show relevant details.
 
-7. If you click on the recipe pic to view the point 6 than website is currently crashing and need to open the page from fresh.
+7. Started working on the Login and register page to develop the Rating of the recipes, was not able to complete.
 
-8. Started working on the Login and register page to develop the Rating of the recipes, was not able to complete it due to unforseen circumstances.
-
-9. will further work on this to improve.
+8. will further work on this to improve.
 
 # Getting Started with Create React App
 

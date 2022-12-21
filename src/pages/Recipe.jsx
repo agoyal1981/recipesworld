@@ -13,7 +13,7 @@ function Recipe() {
   const fetchDetails = async (name)=> {
 
     console.log("Parameter Name " + name)
-    const URL = "https://api.spoonacular.com/recipes/" + name + "/information?apiKey=6e7fd477562341d9a126ac69cad9e8c3";
+    const URL = "https://api.spoonacular.com/recipes/" + name + "/information?apiKey=e816293a46fa42c783797bfd811c91f5";
     console.log("URL " + URL)
     const data = await fetch(URL);
     const detailData = await data.json();

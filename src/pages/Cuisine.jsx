@@ -11,7 +11,7 @@ function Cuisine() {
 
     const getCuisine = async(name) => {
         console.log("Fetching Names:" + name);
-        const URL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=6e7fd477562341d9a126ac69cad9e8c3&cuisine=" + name;
+        const URL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=e816293a46fa42c783797bfd811c91f5&cuisine=" + name;
         const data = await fetch(URL);
     // ('https://api.spoonacular.com/recipes/complexSearch?apiKey=6e7fd477562341d9a126ac69cad9e8c3&cuisine=$name');
         const recipes = await data.json();
